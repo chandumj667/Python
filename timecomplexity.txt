@@ -1,0 +1,20 @@
+know the size of the input by given input constraints
+Rule of thumb:
+n<= 10^6 then we can go for O(n) or O(n logn)
+n<= 10^3 then we can go for O(n^2)
+
+O(1)	: constant time : ideal for simple lookups or operations
+O(logn)	: typically for binary search or log operations
+O(n)	: linear time, good for problems with n<=10^7
+O(nlogn)	: often seen in sorting algos, goood for n<=10^6 
+O(n^2)	: mostly problems with equal to dynamic programming, suitable for n<=10^3
+O(n^k)	: suitable for n<=10^3
+O(2^n)	: seen in recursive sols or combinatoriala probs, feasible for n<=20
+O(n!)	: suitable for very small input sizes like n<=10
+
+Sorting	: Use O(n log n) (e.g., mergesort, heapsort).
+Searching	: Use O(log n) for binary search or O(1) for hash-based lookups.
+Graph 	: For shortest paths in graphs 
+	  with small edge weights, use Dijkstra's algorithm (O(E log V)). 
+	  For unweighted graphs, use BFS or DFS (O(V + E)).
+DP	: For smaller inputs (around 1000), O(n^2) or O(n^3) DP can work.
